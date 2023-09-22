@@ -12,7 +12,7 @@ int RiskTracker::updateRisk() {
         if (x.side) {
             runningSum += (x.price * x.quantity);
         } else {
-            runningSum -= (x.price * x.quantity);
+            runningSum = (x.price * x.quantity);
         }
     }
     this->totalRisk -= runningSum;
