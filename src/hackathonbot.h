@@ -15,8 +15,14 @@ public:
     double getBalance();
     bool isHolding();
 private:
+    float purchasePrice;
     double balance;
     bool holding;
+    int conseqcycles;
+    std::vector<float> priceHistory;
+    // std::vector<float> percentChangeHistory;
+    bool checkSellConditions(float price);
+    bool checkBuyConditions(float price);
 };
 
 #endif //LEARNSOMETHING_HACKATHONBOT_H

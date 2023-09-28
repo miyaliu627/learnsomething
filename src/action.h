@@ -1,7 +1,7 @@
-    #ifndef LEARNSOMETHING_ACTION_H
-    #define LEARNSOMETHING_ACTION_H
+#ifndef LEARNSOMETHING_ACTION_H
+#define LEARNSOMETHING_ACTION_H
 
-    class Action {
+class Action {
     public:
         Action(bool initHold = true);
         double initialBalance;
@@ -13,6 +13,6 @@
     private:
         double balance;
         bool holding;   
-    };
+};
 
     #endif //LEARNSOMETHING_ACTION_H
