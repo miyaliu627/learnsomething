@@ -18,6 +18,8 @@ def disasterCode():
         if len(uniquePrimes) == 0:
             uniquePrimes.append(i)
 
+
+
 # Benchmark the code
 if __name__ == "__main__":
     benchmark_code = "disasterCode()"
@@ -31,3 +33,5 @@ if __name__ == "__main__":
     res = sum(times)/5
 
     print(f"Average execution time after 5 runs: {res:.6f} seconds")
+
+    
