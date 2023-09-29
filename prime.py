@@ -19,25 +19,25 @@ def disasterCode():
             uniquePrimes.append(i)
 
 def better():
-    prime = [True for _ in range(1000)]
+    prime = [True for _ in range(2500)]
     p = 2
-    while p**2 <= 1000:
+    while p**2 <= 2500:
         # If prime[p] is still True, it's a prime number
         if prime[p]:
             # Mark all multiples of p as non-prime
-            for i in range(p**2, 1000, p):
+            for i in range(p**2, 2500, p):
                 prime[i] = False
         p += 1
 
     # Collect prime numbers from 2 to n (excluding n if it's not prime)
-    primes = [i for i in range(2, 1000) if prime[i]]
+    primes = [i for i in range(2, 2500) if prime[i]]
 
     return primes
 
 # Benchmark the code
 if __name__ == "__main__":
-    benchmark_code = "disasterCode()"
-    setup_code = "from __main__ import disasterCode"
+    benchmark_code = "better()"
+    setup_code = "from __main__ import better"
 
     # Measure the execution time of disasterCode function
     times = []
