@@ -18,7 +18,21 @@ def disasterCode():
         if len(uniquePrimes) == 0:
             uniquePrimes.append(i)
 
+def better():
+    prime = [True for _ in range(1000)]
+    p=2
+    while p**2 <= 1000:
+        # If prime[p] is still True, it's a prime number
+        if prime[p]:
+            # Mark all multiples of p as non-prime
+            for i in range(p**2, 1000, p):
+                prime[i] = False
+        p += 1
 
+    # Collect prime numbers from 2 to n (excluding n if it's not prime)
+    primes = [i for i in range(2, 1000) if prime[i]]
+
+    return primes
 
 # Benchmark the code
 if __name__ == "__main__":
