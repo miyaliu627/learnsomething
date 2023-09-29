@@ -125,7 +125,7 @@ bool HackathonBot::checkSellConditions(float price) {
     }
 
     // add to the consecutive cycles where the percent change is within the 5 percent range
-    if (std::abs((price-this->priceHistory.back()))/this->priceHistory.back() <= 5) {
+    if (std::abs(price - this->priceHistory.back())/this->priceHistory.back() <= 0.05) {
         this->conseqcycles++;
     }
     else {
