@@ -79,7 +79,7 @@ TEST(HackatonTest, sellPerc) {
   HackathonBot hackathonbot;
   Action action;
   hackathonbot.takeAction(188);
-  ASSERT_EQ(hackathonbot.isHolding(),true);
+  ASSERT_EQ(hackathonbot.isHolding(), true);
   hackathonbot.takeAction(190);
   ASSERT_EQ(hackathonbot.isHolding(),false);
 }
