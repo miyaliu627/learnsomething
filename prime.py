@@ -20,7 +20,7 @@ def disasterCode():
 
 def better():
     prime = [True for _ in range(1000)]
-    p=2
+    p = 2
     while p**2 <= 1000:
         # If prime[p] is still True, it's a prime number
         if prime[p]:
