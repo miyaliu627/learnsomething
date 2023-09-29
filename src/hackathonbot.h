@@ -18,9 +18,9 @@ private:
     float purchasePrice;
     double balance;
     bool holding;
-    int conseqcycles;
+    int conseqcycles; //percent change within 5 percent
+    int conseq_change; //consecutive ups and downs
     std::vector<float> priceHistory;
-    // std::vector<float> percentChangeHistory;
     bool checkSellConditions(float price);
     bool checkBuyConditions(float price);
 };
