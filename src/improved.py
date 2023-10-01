@@ -1,7 +1,7 @@
 def max_area(height):
     max_area = 0
     n = len(height)
-
+    #use two pointers
     left = 0
     right = n-1
     while left < right:
